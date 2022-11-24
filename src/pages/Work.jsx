@@ -2,6 +2,7 @@ import React from "react";
 import "./Work.css";
 import { motion } from "framer-motion";
 import { Button, Panel } from "rsuite";
+import { AiFillGithub, AiFillEye } from "react-icons/ai";
 
 export default function Work() {
   return (
@@ -30,8 +31,29 @@ export default function Work() {
               sint provident repudiandae aliquid cumque blanditiis!
             </p>
             <div className="card__content--button-group">
-              <Button className="card__content--live-button">Live</Button>
-              <Button className="card__content--repo-button">Repo</Button>
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              >
+                <Button
+                  className="card__content--live-button"
+                  href="https://find-the-parasite.web.app/"
+                >
+                  <AiFillEye />
+                  Live
+                </Button>
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              >
+                <Button className="card__content--repo-button">
+                  <AiFillGithub />
+                  Repo
+                </Button>
+              </motion.div>
             </div>
           </motion.div>
         </Panel>

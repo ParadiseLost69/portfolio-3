@@ -31,6 +31,12 @@
   margin: 1rem;
 }
 
+.card__content--repo-button > *,
+.card__content--live-button > * {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
 @media (min-width: 43.75em) {
   .portfolio-container__work {
     grid-template-rows: 1fr 9fr;

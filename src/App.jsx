@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import { Button, Nav, Container } from "rsuite";
 import { Navbar } from "./components/Navbar";
+import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import Work from "./pages/Work";
 
@@ -49,6 +50,10 @@ function App() {
               </Button>
             </motion.div>
           </motion.div>
+          <div className="intro__item socials-group">
+            <SocialIcon url="https://www.linkedin.com/in/teddy-loukas-1777b81b0/" />
+            <SocialIcon url="https://github.com/ParadiseLost69" />
+          </div>
         </motion.main>
       )}
       {/* WORK SECTION */}
