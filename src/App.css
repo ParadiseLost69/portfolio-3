@@ -1,0 +1,32 @@
+.App {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 5fr 95fr;
+}
+
+.portfolio-container__home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.intro__item {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.name:hover {
+  cursor: grab;
+}
+
+.name:active {
+  cursor: grabbing;
+}
+
+/* WORK */

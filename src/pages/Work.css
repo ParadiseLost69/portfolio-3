@@ -1,0 +1,42 @@
+.portfolio-container__work {
+  margin: 1rem;
+  display: grid;
+  grid-template-rows: 5fr 95fr;
+}
+
+.work__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.card {
+  margin: 1rem;
+  background-color: white;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__content--button-group {
+  display: flex;
+  margin: 1.5rem;
+}
+
+.card__content--live-button,
+.card__content--repo-button {
+  margin: 1rem;
+}
+
+@media (min-width: 43.75em) {
+  .portfolio-container__work {
+    grid-template-rows: 1fr 9fr;
+  }
+  .work__container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
