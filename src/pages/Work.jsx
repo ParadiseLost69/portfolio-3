@@ -20,12 +20,7 @@ export default function Work() {
         Work
       </motion.h1>
       <motion.div className="work__container">
-        <Panel
-          className="card 1"
-          header="Find The Parasite App"
-          bordered
-          shaded
-        >
+        <Panel className="card" header="Find The Parasite App" bordered shaded>
           <motion.div className="card__content">
             <img
               className="card__content--image"
@@ -63,7 +58,7 @@ export default function Work() {
                   appearance="primary"
                   size="lg"
                   className="card__content--repo-button"
-                  hraf="https://github.com/ParadiseLost69/waldo-project"
+                  href="https://github.com/ParadiseLost69/waldo-project"
                   target="_blank"
                 >
                   <AiFillGithub />
@@ -74,7 +69,7 @@ export default function Work() {
           </motion.div>
         </Panel>
         <Panel
-          className="card 2"
+          className="card"
           header="E-commerce Website | Sunday Archive"
           bordered
           shaded
@@ -127,7 +122,7 @@ export default function Work() {
             </div>
           </motion.div>
         </Panel>
-        <Panel className="card 3" header="Resume Generator" bordered shaded>
+        <Panel className="card" header="Resume Generator" bordered shaded>
           <motion.div className="card__content">
             <img
               className="card__content--image"
@@ -175,7 +170,7 @@ export default function Work() {
             </div>
           </motion.div>
         </Panel>
-        <Panel className="card 4" header="Message Board" bordered shaded>
+        <Panel className="card" header="Message Board" bordered shaded>
           <motion.div className="card__content">
             <img
               className="card__content--image"
