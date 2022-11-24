@@ -1,0 +1,12 @@
+.portfolio-container__about {
+  margin: 1rem;
+  display: grid;
+  grid-template-rows: 5fr 95fr;
+}
+
+@media (min-width: 70.625em) {
+  .portfolio-container__about {
+    margin-inline: 5rem;
+    margin-top: 3rem;
+  }
+}

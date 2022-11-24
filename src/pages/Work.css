@@ -20,6 +20,14 @@
   flex-direction: column;
   align-items: center;
 }
+
+.card__content > * {
+  margin: 1rem;
+  font-size: 1.1rem;
+}
+.card__content > p {
+  text-indent: 1rem;
+}
 .card__content--image {
   height: 10rem;
   border-radius: 1rem;
@@ -42,7 +50,7 @@
 
 @media (min-width: 43.75em) {
   .portfolio-container__work {
-    grid-template-rows: 1fr 9fr;
+    grid-template-rows: 5fr 95fr;
   }
   .work__container {
     grid-template-columns: 1fr 1fr;
@@ -56,6 +64,10 @@
 }
 
 @media (min-width: 70.625em) {
+  .portfolio-container__work {
+    margin-inline: 5rem;
+    margin-top: 3rem;
+  }
   .card__content--image {
     height: 20rem;
     width: 35rem;

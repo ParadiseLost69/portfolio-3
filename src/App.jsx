@@ -5,13 +5,19 @@ import { Navbar } from "./components/Navbar";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import Work from "./pages/Work";
+import About from "./pages/about";
 
 function App() {
   const [active, setActive] = React.useState("home");
 
   return (
     <div className="App">
-      <Navbar reversed appearance="tabs" active={active} onSelect={setActive} />
+      <Navbar
+        reversed
+        appearance="default"
+        active={active}
+        onSelect={setActive}
+      />
       {active === "home" && (
         <motion.main
           initial={{ opacity: 0 }}
@@ -34,7 +40,7 @@ function App() {
             >
               <h1 className="intro__item name">Teddy Loukas</h1>
             </motion.div>
-            <h2 className="intro__item">Full Stack Web Developer</h2>
+            <h2 className="intro__item sub-header">Full Stack Web Developer</h2>
             <motion.div
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
@@ -59,6 +65,7 @@ function App() {
       )}
       {/* WORK SECTION */}
       {active === "work" && <Work />}
+      {active === "about" && <About />}
     </div>
   );
 }
