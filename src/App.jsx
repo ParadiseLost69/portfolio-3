@@ -5,7 +5,7 @@ import { Navbar } from "./components/Navbar";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import Work from "./pages/Work";
-import About from "./pages/about";
+import About from "./pages/About";
 import Contact from "./pages/Contact";
 
 function App() {
@@ -28,7 +28,8 @@ function App() {
         >
           <motion.div className="intro">
             {/* Motion for H1 name intro__item */}
-            <motion.div
+            <motion.h1
+              className="intro__item name"
               drag
               animate={{ rotate: 5, y: 25 }}
               transition={{
@@ -39,8 +40,8 @@ function App() {
                 damping: 5,
               }}
             >
-              <h1 className="intro__item name">Teddy Loukas</h1>
-            </motion.div>
+              Teddy Loukas
+            </motion.h1>
             <h2 className="intro__item sub-header">Full Stack Web Developer</h2>
             <motion.div
               whileHover={{ scale: 1.1 }}
@@ -58,9 +59,28 @@ function App() {
             </motion.div>
           </motion.div>
           <div className="intro__item socials-group">
-            <SocialIcon url="https://www.linkedin.com/in/teddy-loukas-1777b81b0/" />
-            <SocialIcon url="https://github.com/ParadiseLost69" />
-            <SocialIcon url="https://twitter.com/TeddyConst" />
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+            >
+              <SocialIcon url="https://www.linkedin.com/in/teddy-loukas-1777b81b0/" />
+            </motion.div>
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+            >
+              <SocialIcon url="https://github.com/ParadiseLost69" />
+            </motion.div>
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+            >
+              <SocialIcon url="https://twitter.com/TeddyConst" />
+            </motion.div>
+            .
           </div>
         </motion.main>
       )}

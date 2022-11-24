@@ -33,6 +33,7 @@
   bottom: -5rem;
   left: 50;
   margin-top: 1rem;
+  display: flex;
 }
 .socials-group > * {
   margin-inline: 1rem;

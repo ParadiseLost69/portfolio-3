@@ -33,7 +33,8 @@ export default function About() {
           to develop responsive, accessible, and visually pleasing websites,
           games, and more. In my free time I enjoy playing guitar, snowboarding,
           and coding. If you would like to get in contact please send a message
-          to tedloukas12@gmail.com or head over to the contact page.
+          to <a href="mailto:tedloukas@outlook.com">tedloukas@outlook.com</a> or
+          head over to the contact page.
         </p>
         <div className="content__skills-group">
           <h3 className="skills-group__title">Skills</h3>

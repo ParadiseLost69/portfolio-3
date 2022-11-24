@@ -75,7 +75,7 @@ export default function Work() {
         </Panel>
         <Panel
           className="card 2"
-          header="Ecommerce website | Sunday Archive"
+          header="E-commerce Website | Sunday Archive"
           bordered
           shaded
         >

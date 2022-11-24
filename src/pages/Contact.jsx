@@ -16,8 +16,7 @@ export default function Contact() {
         <a href="mailto:tedloukas@outlook.com"> tedloukas@outlook.com</a>
       </p>
       <Button
-        appearance="ghost"
-        color="blue"
+        appearance="primary"
         onClick={() => (window.location = "mailto:tedloukas@outlook.com")}
       >
         Contact Me
