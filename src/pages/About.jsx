@@ -4,7 +4,7 @@ import "./About.css";
 import cssLogo from "../assets/images/CSS-logo.png";
 import expressLogo from "../assets/images/Expressjs-logo.png";
 import htmlLogo from "../assets/images/HTML-logo.png";
-import jsLogo from "../assets/images/Javascript-logo.png";
+import jsLogo from "../assets/images/JavaScript-logo.png";
 import nextLogo from "../assets/images/nextjs.png";
 import nodeLogo from "../assets/images/node-js-logo.png";
 import reactLogo from "../assets/images/react-logo.png";
