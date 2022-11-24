@@ -1,0 +1,15 @@
+.portfolio--container__contact {
+  margin: 2rem;
+}
+
+.portfolio--container__contact > p,
+.portfolio--container__contact > button {
+  margin: 1rem;
+}
+
+@media (min-width: 70.625em) {
+  .portfolio--container__contact {
+    margin-inline: 5rem;
+    margin-top: 3rem;
+  }
+}

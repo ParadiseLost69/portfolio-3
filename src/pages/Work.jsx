@@ -166,6 +166,7 @@ export default function Work() {
                   appearance="primary"
                   size="lg"
                   className="card__content--repo-button"
+                  href="https://github.com/ParadiseLost69/resume-generator"
                 >
                   <AiFillGithub />
                   Repo
@@ -184,7 +185,8 @@ export default function Work() {
             />
             <p className="card__content--description">
               A message board created using Node.js and Express.js using EJS
-              templating. Previously hosted on Heroku.
+              templating. Users can enter their name and message and it will
+              persist on the website. Previously hosted on Heroku.
             </p>
             <div className="card__content--button-group">
               <motion.div

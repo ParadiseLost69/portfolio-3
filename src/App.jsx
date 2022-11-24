@@ -6,6 +6,7 @@ import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import Work from "./pages/Work";
 import About from "./pages/about";
+import Contact from "./pages/Contact";
 
 function App() {
   const [active, setActive] = React.useState("home");
@@ -66,6 +67,7 @@ function App() {
       {/* WORK SECTION */}
       {active === "work" && <Work />}
       {active === "about" && <About />}
+      {active === "contact" && <Contact />}
     </div>
   );
 }
