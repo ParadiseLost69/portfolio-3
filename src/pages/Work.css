@@ -20,7 +20,10 @@
   flex-direction: column;
   align-items: center;
 }
-
+.card__content--image {
+  height: 10rem;
+  border-radius: 1rem;
+}
 .card__content--button-group {
   display: flex;
   margin: 1.5rem;
@@ -44,5 +47,18 @@
   .work__container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+  }
+  .card__content--image {
+    height: 15rem;
+
+    border-radius: 1rem;
+  }
+}
+
+@media (min-width: 70.625em) {
+  .card__content--image {
+    height: 20rem;
+    width: 35rem;
+    border-radius: 1rem;
   }
 }

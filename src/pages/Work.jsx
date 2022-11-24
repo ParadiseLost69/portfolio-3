@@ -3,6 +3,7 @@ import "./Work.css";
 import { motion } from "framer-motion";
 import { Button, Panel } from "rsuite";
 import { AiFillGithub, AiFillEye } from "react-icons/ai";
+import ParasitesImage from "../assets/images/ParasitesApp.gif";
 
 export default function Work() {
   return (
@@ -20,7 +21,7 @@ export default function Work() {
           <motion.div className="card__content">
             <img
               className="card__content--image"
-              src="/"
+              src={ParasitesImage}
               alt="nothing"
               srcset=""
             />

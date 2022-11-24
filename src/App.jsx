@@ -53,6 +53,7 @@ function App() {
           <div className="intro__item socials-group">
             <SocialIcon url="https://www.linkedin.com/in/teddy-loukas-1777b81b0/" />
             <SocialIcon url="https://github.com/ParadiseLost69" />
+            <SocialIcon url="https://twitter.com/TeddyConst" />
           </div>
         </motion.main>
       )}
