@@ -6,7 +6,7 @@ import { AiFillGithub, AiFillEye } from "react-icons/ai";
 import ParasitesImage from "../assets/images/ParasitesApp.gif";
 import ShoppingAppImage from "../assets/images/ShoppingApp.gif";
 import ResumeGeneratorImage from "../assets/images/ResumeGenerator.gif";
-import MessageBoardImage from "../assets/images/MessageBoard.gif";
+import MessageBoardImage from "../assets/images/sushiInventorygif.gif";
 
 export default function Work() {
   return (
@@ -83,7 +83,7 @@ export default function Work() {
             />
             <p className="card__content--description">
               A fully responsive mock E-commerce website created using React and
-              React Router. Sunday Archive is a business that refurbished
+              React Router. Sunday Archive is a business that refurbishes
               antique furniture and modernizes them. Hosted on Netlify.
             </p>
             <div className="card__content--button-group">
@@ -170,7 +170,7 @@ export default function Work() {
             </div>
           </motion.div>
         </Panel>
-        <Panel className="card" header="Message Board" bordered shaded>
+        <Panel className="card" header="Sushi Inventory" bordered shaded>
           <motion.div className="card__content">
             <img
               className="card__content--image"
@@ -179,9 +179,9 @@ export default function Work() {
               srcset=""
             />
             <p className="card__content--description">
-              A message board created using Node.js and Express.js using EJS
-              templating. Users can enter their name and message and it will
-              persist on the website. Previously hosted on Heroku.
+              A CRUD app created using Node.js, Mongoose, MongoDb, and
+              Express.js using pug templating. create, delete, and update
+              popular or imaginary sushi. Hosted with Railway.
             </p>
             <div className="card__content--button-group">
               <motion.div
@@ -193,8 +193,7 @@ export default function Work() {
                   appearance="primary"
                   size="lg"
                   className="card__content--live-button"
-                  href="https://still-ravine-63449.herokuapp.com/"
-                  disabled
+                  href="https://sushi-restaurant-inventory-production.up.railway.app/sushi"
                 >
                   <AiFillEye />
                   Live
@@ -209,7 +208,7 @@ export default function Work() {
                   appearance="primary"
                   size="lg"
                   className="card__content--repo-button"
-                  href="https://github.com/ParadiseLost69/mini-message-board"
+                  href="https://github.com/ParadiseLost69/sushi-restaurant-inventory"
                   target="_blank"
                 >
                   <AiFillGithub />
