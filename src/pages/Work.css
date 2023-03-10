@@ -4,6 +4,11 @@
   grid-template-rows: 5fr 95fr;
 }
 
+.work__title {
+  font-size: 2.5rem;
+  margin-top: 3rem;
+}
+
 .work__container {
   display: grid;
   grid-template-columns: 1fr;
@@ -48,7 +53,7 @@
   margin-left: 0.5rem;
 }
 
-@media (min-width: 43.75em) {
+@media (min-width: 48.125rem) {
   .portfolio-container__work {
     grid-template-rows: 5fr 95fr;
   }
@@ -63,7 +68,7 @@
   }
 }
 
-@media (min-width: 70.625em) {
+@media (min-width: 70.625rem) {
   .portfolio-container__work {
     margin-inline: 5rem;
     margin-top: 3rem;

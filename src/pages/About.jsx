@@ -15,15 +15,16 @@ import reduxLogo from "../assets/images/redux-logo.png";
 import webpackLogo from "../assets/images/webpack-logo.png";
 import teddyPhoto from "../assets/images/teddy-profile.jpg";
 
-export default function About() {
+export default function About(props) {
   return (
     <motion.main
       className="portfolio-container__about"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
+      ref={props.aboutRef}
     >
-      <h1 className="about__title">About</h1>
+      <h2 className="about__title">About</h2>
       <div className="about__content">
         <img src={teddyPhoto} alt="nothing" className="content__picture" />
         <h2 className="content__name">Teddy Loukas</h2>

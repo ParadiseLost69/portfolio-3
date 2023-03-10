@@ -8,17 +8,18 @@ import ShoppingAppImage from "../assets/images/ShoppingApp.gif";
 import ResumeGeneratorImage from "../assets/images/ResumeGenerator.gif";
 import MessageBoardImage from "../assets/images/sushiInventorygif.gif";
 
-export default function Work() {
+export default function Work(props) {
   return (
     <motion.main
       className="portfolio-container__work"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
+      ref={props.workRef}
     >
-      <motion.h1 drag className="work__title">
+      <motion.h2 drag className="work__title">
         Work
-      </motion.h1>
+      </motion.h2>
       <motion.div className="work__container">
         <Panel className="card" header="Find The Parasite App" bordered shaded>
           <motion.div className="card__content">
@@ -68,6 +69,7 @@ export default function Work() {
             </div>
           </motion.div>
         </Panel>
+
         <Panel
           className="card"
           header="E-commerce Website | Sunday Archive"

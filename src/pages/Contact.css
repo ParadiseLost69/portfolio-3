@@ -5,6 +5,10 @@
   justify-content: center;
   margin: 2rem;
 }
+.contact__title {
+  font-size: 2.5rem;
+  margin-top: 3rem;
+}
 
 .portfolio--container__contact > p,
 .portfolio--container__contact > button {
@@ -15,6 +19,6 @@
 @media (min-width: 70.625em) {
   .portfolio--container__contact {
     margin-inline: 5rem;
-    margin-top: 3rem;
+    margin-top: 8rem;
   }
 }
