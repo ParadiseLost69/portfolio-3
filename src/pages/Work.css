@@ -56,6 +56,7 @@
 @media (min-width: 48.125rem) {
   .portfolio-container__work {
     grid-template-rows: 5fr 95fr;
+    max-height: 95rem;
   }
   .work__container {
     grid-template-columns: 1fr 1fr;
