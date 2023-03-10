@@ -28,12 +28,12 @@ export default function About() {
         <img src={teddyPhoto} alt="nothing" className="content__picture" />
         <h2 className="content__name">Teddy Loukas</h2>
         <p className="content__description">
-          I am a self-taught, full-stack web developer located in London,
-          Ontario, Canada. I mainly utilize React and the surrounding ecosystem
-          to develop responsive, accessible, and visually pleasing websites,
-          games, and more. In my free time I enjoy playing guitar, snowboarding,
-          and coding. If you would like to get in contact please send a message
-          to <a href="mailto:tedloukas@outlook.com">tedloukas@outlook.com</a> or
+          Full-stack web developer from Canada. I mainly utilize React and the
+          surrounding ecosystem to develop responsive, accessible, and visually
+          pleasing websites, games, and more. In my free time I enjoy playing
+          guitar, snowboarding, and coding. If you would like to get in contact
+          please send a message to{" "}
+          <a href="mailto:tedloukas@outlook.com">tedloukas@outlook.com</a> or
           head over to the contact page.
         </p>
         <div className="content__skills-group">

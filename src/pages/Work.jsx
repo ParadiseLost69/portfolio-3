@@ -82,9 +82,9 @@ export default function Work() {
               srcset=""
             />
             <p className="card__content--description">
-              A fully responsive mock E-commerce website created using React and
-              React Router. Sunday Archive is a business that refurbishes
-              antique furniture and modernizes them. Hosted on Netlify.
+              A fully responsive website for Sunday Archive. Sunday Archive is a
+              business that refurbishes antique furniture and modernizes them.
+              Hosted on Netlify.
             </p>
             <div className="card__content--button-group">
               <motion.div
