@@ -1,0 +1,8 @@
+.portfolio--container__contact form {
+  place-self: center;
+  margin-bottom: 5rem;
+}
+.form-submitted {
+  margin-bottom: 5rem;
+  text-align: center;
+}

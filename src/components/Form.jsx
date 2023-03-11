@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Form, ButtonToolbar, Button, Input } from "rsuite";
+import "./Form.css";
 
 const Textarea = React.forwardRef((props, ref) => (
   <Input {...props} as="textarea" ref={ref} />
@@ -17,6 +18,7 @@ const FormDisplay = () => {
     <>
       {isSubmitted ? (
         <motion.div
+          className="form-submitted"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}

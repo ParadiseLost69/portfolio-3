@@ -1,10 +1,10 @@
 .portfolio--container__contact {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
   margin: 2rem;
 }
+
 .contact__title {
   font-size: 2.5rem;
   margin-top: 3rem;
@@ -14,7 +14,6 @@
 .portfolio--container__contact > p,
 .portfolio--container__contact > button {
   margin: 1rem;
-  text-align: center;
 }
 
 @media (min-width: 70.625em) {
