@@ -2,6 +2,7 @@ import React from "react";
 import "./Contact.css";
 import { motion } from "framer-motion";
 import { Button } from "rsuite";
+import FormDisplay from "../components/Form";
 export default function Contact(props) {
   return (
     <motion.div
@@ -12,16 +13,7 @@ export default function Contact(props) {
       ref={props.contactRef}
     >
       <h2 className="contact__title">Contact</h2>
-      <p>
-        For all inquries please send an email to{" "}
-        <a href="mailto:tedloukas@outlook.com"> tedloukas@outlook.com</a>
-      </p>
-      <Button
-        appearance="primary"
-        onClick={() => (window.location = "mailto:tedloukas@outlook.com")}
-      >
-        Contact Me
-      </Button>
+      <FormDisplay />
     </motion.div>
   );
 }

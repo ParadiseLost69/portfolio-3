@@ -8,6 +8,7 @@
 .contact__title {
   font-size: 2.5rem;
   margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 .portfolio--container__contact > p,
@@ -19,6 +20,5 @@
 @media (min-width: 70.625em) {
   .portfolio--container__contact {
     margin-inline: 5rem;
-    margin-top: 8rem;
   }
 }
