@@ -40,6 +40,7 @@ const FormDisplay = () => {
         </motion.div>
       ) : (
         <Form name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact" />
           <Form.Group onChange={(e) => handleFormChange(e)} controlId="name">
             <Form.ControlLabel>Name</Form.ControlLabel>
             <Form.Control name="name" />
