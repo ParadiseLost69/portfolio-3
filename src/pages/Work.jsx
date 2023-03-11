@@ -81,7 +81,6 @@ export default function Work(props) {
               className="card__content--image"
               src={ShoppingAppImage}
               alt="nothing"
-              srcset=""
             />
             <p className="card__content--description">
               A fully responsive website for Sunday Archive. Sunday Archive is a
@@ -130,7 +129,6 @@ export default function Work(props) {
               className="card__content--image"
               src={ResumeGeneratorImage}
               alt="nothing"
-              srcset=""
             />
             <p className="card__content--description">
               A responsive resume generator created using React. Users enter
@@ -178,7 +176,6 @@ export default function Work(props) {
               className="card__content--image"
               src={MessageBoardImage}
               alt="nothing"
-              srcset=""
             />
             <p className="card__content--description">
               A CRUD app created using Node.js, Mongoose, MongoDb, and
