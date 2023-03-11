@@ -39,7 +39,7 @@ const FormDisplay = () => {
           </h3>
         </motion.div>
       ) : (
-        <form name="contact" method="POST" data-netlify="true">
+        <Form name="contact" method="POST" data-netlify="true">
           <Form.Group onChange={(e) => handleFormChange(e)} controlId="name">
             <Form.ControlLabel>Name</Form.ControlLabel>
             <Form.Control name="name" />
@@ -77,7 +77,7 @@ const FormDisplay = () => {
               </Button>
             </ButtonToolbar>
           </Form.Group>
-        </form>
+        </Form>
       )}
     </>
   );
