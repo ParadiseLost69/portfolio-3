@@ -9,6 +9,17 @@ const Textarea = React.forwardRef((props, ref) => (
 
 const FormDisplay = () => {
   const [isSubmitted, setIsSubmitted] = React.useState(false);
+  const [form, setForm] = React.useState({ name: "", email: "", message: "" });
+
+  const handleFormChange = (e) => {
+    const { value, name } = e.target;
+    setForm((prevForm) => {
+      return { ...prevForm, [name]: value };
+    });
+  };
+
+  const verified =
+    form.name.length > 0 && form.email.length > 0 && form.message.length > 0;
 
   const handleSubmit = () => {
     setIsSubmitted(true);
@@ -29,34 +40,41 @@ const FormDisplay = () => {
         </motion.div>
       ) : (
         <Form name="contact" method="POST" data-netlify="true">
-          <Form.Group controlId="name">
+          <Form.Group onChange={(e) => handleFormChange(e)} controlId="name">
             <Form.ControlLabel>Name</Form.ControlLabel>
             <Form.Control name="name" />
             <Form.HelpText>Name is required</Form.HelpText>
           </Form.Group>
-          <Form.Group controlId="email">
+          <Form.Group onChange={(e) => handleFormChange(e)} controlId="email">
             <Form.ControlLabel>Email</Form.ControlLabel>
             <Form.Control
               onClick={(e) => {
                 console.log(e.target.value);
               }}
-              onChange={(e) => checkValidity(e)}
               name="email"
               type="email"
             />
             <Form.HelpText tooltip>Email is required</Form.HelpText>
           </Form.Group>
 
-          <Form.Group controlId="textarea">
+          <Form.Group onChange={(e) => handleFormChange(e)} controlId="message">
             <Form.ControlLabel>Message</Form.ControlLabel>
-            <Form.Control rows={5} name="textarea" accepter={Textarea} />
+            <Form.Control
+              rows={5}
+              name="message"
+              value={form.message}
+              accepter={Textarea}
+            />
           </Form.Group>
           <Form.Group>
             <ButtonToolbar>
-              <Button appearance="primary" onClick={handleSubmit}>
+              <Button
+                appearance="primary"
+                disabled={!verified}
+                onClick={handleSubmit}
+              >
                 Submit
               </Button>
-              <Button appearance="default">Cancel</Button>
             </ButtonToolbar>
           </Form.Group>
         </Form>
