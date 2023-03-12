@@ -39,46 +39,64 @@ const FormDisplay = () => {
           </h3>
         </motion.div>
       ) : (
-        <Form name="contact" method="POST" data-netlify="true">
-          <input type="hidden" name="form-name" value="contact" />
-          <Form.Group onChange={(e) => handleFormChange(e)} controlId="name">
-            <Form.ControlLabel>Name</Form.ControlLabel>
-            <Form.Control name="name" />
-            <Form.HelpText>Name is required</Form.HelpText>
-          </Form.Group>
-          <Form.Group onChange={(e) => handleFormChange(e)} controlId="email">
-            <Form.ControlLabel>Email</Form.ControlLabel>
-            <Form.Control
-              onClick={(e) => {
-                console.log(e.target.value);
-              }}
-              name="email"
-              type="email"
-            />
-            <Form.HelpText tooltip>Email is required</Form.HelpText>
-          </Form.Group>
+        // <Form name="contact" method="POST" data-netlify="true">
+        //   <input type="hidden" name="form-name" value="contact" />
+        //   <Form.Group onChange={(e) => handleFormChange(e)} controlId="name">
+        //     <Form.ControlLabel>Name</Form.ControlLabel>
+        //     <Form.Control name="name" />
+        //     <Form.HelpText>Name is required</Form.HelpText>
+        //   </Form.Group>
+        //   <Form.Group onChange={(e) => handleFormChange(e)} controlId="email">
+        //     <Form.ControlLabel>Email</Form.ControlLabel>
+        //     <Form.Control
+        //       onClick={(e) => {
+        //         console.log(e.target.value);
+        //       }}
+        //       name="email"
+        //       type="email"
+        //     />
+        //     <Form.HelpText tooltip>Email is required</Form.HelpText>
+        //   </Form.Group>
 
-          <Form.Group onChange={(e) => handleFormChange(e)} controlId="message">
-            <Form.ControlLabel>Message</Form.ControlLabel>
-            <Form.Control
-              rows={5}
-              name="message"
-              value={form.message}
-              accepter={Textarea}
-            />
-          </Form.Group>
-          <Form.Group>
-            <ButtonToolbar>
-              <Button
-                appearance="primary"
-                disabled={!verified}
-                onClick={handleSubmit}
-              >
-                Submit
-              </Button>
-            </ButtonToolbar>
-          </Form.Group>
-        </Form>
+        //   <Form.Group onChange={(e) => handleFormChange(e)} controlId="message">
+        //     <Form.ControlLabel>Message</Form.ControlLabel>
+        //     <Form.Control
+        //       rows={5}
+        //       name="message"
+        //       value={form.message}
+        //       accepter={Textarea}
+        //     />
+        //   </Form.Group>
+        //   <Form.Group>
+        //     <ButtonToolbar>
+        //       <Button
+        //         appearance="primary"
+        //         disabled={!verified}
+        //         onClick={handleSubmit}
+        //       >
+        //         Submit
+        //       </Button>
+        //     </ButtonToolbar>
+        //   </Form.Group>
+        // </Form>
+        <form name="contact" method="post">
+          <input type="hidden" name="form-name" value="contact" />
+          <p>
+            <label htmlFor="name">Name</label> <br />
+            <input type="text" id="name" name="name" required />
+          </p>
+          <p>
+            <label htmlFor="email">Email</label> <br />
+            <input type="email" id="email" name="email" required />
+          </p>
+          <p>
+            <label htmlFor="message">Message</label> <br />
+            <textarea id="message" name="message" required></textarea>
+          </p>
+          <p>
+            <input type="submit" value="Submit message" />
+          </p>
+        </form>
       )}
     </>
   );
