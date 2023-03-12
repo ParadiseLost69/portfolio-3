@@ -6,3 +6,16 @@
   margin-bottom: 5rem;
   text-align: center;
 }
+
+.form p {
+  margin-top: 1.3rem;
+}
+
+.form input,
+.form textarea {
+  width: 18rem;
+  border: 1px solid rgba(99, 99, 99, 0.248);
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+}

@@ -79,7 +79,7 @@ const FormDisplay = () => {
         //     </ButtonToolbar>
         //   </Form.Group>
         // </Form>
-        <form name="contact" method="post">
+        <form name="contact" method="post" className="form">
           <input type="hidden" name="form-name" value="contact" />
           <p>
             <label htmlFor="name">Name</label> <br />
@@ -94,7 +94,9 @@ const FormDisplay = () => {
             <textarea id="message" name="message" required></textarea>
           </p>
           <p>
-            <input type="submit" value="Submit message" />
+            <Button type="submit" appearance="primary">
+              Submit
+            </Button>
           </p>
         </form>
       )}
