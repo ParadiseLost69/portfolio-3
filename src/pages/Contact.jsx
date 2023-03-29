@@ -5,7 +5,7 @@ import { Button } from "rsuite";
 import FormDisplay from "../components/Form";
 export default function Contact(props) {
   return (
-    <motion.div
+    <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -14,6 +14,6 @@ export default function Contact(props) {
     >
       <h2 className="contact__title">Contact</h2>
       <FormDisplay />
-    </motion.div>
+    </motion.section>
   );
 }

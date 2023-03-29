@@ -17,7 +17,7 @@ import teddyPhoto from "../assets/images/teddy-profile.jpg";
 
 export default function About(props) {
   return (
-    <motion.main
+    <motion.section
       className="portfolio-container__about"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -152,6 +152,6 @@ export default function About(props) {
           </motion.div>
         </div>
       </div>
-    </motion.main>
+    </motion.section>
   );
 }

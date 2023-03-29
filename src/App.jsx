@@ -31,7 +31,7 @@ function App() {
         aboutRef={aboutRef}
       />
 
-      <motion.main
+      <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
@@ -93,7 +93,7 @@ function App() {
           </motion.div>
           .
         </div>
-      </motion.main>
+      </motion.section>
       <Work workRef={workRef} />
       <About aboutRef={aboutRef} />
       <Contact contactRef={contactRef} />

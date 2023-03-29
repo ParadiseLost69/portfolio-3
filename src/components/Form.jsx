@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Form, ButtonToolbar, Button, Input } from "rsuite";
+import { Button, Input } from "rsuite";
 import "./Form.css";
 
 const Textarea = React.forwardRef((props, ref) => (
@@ -39,46 +39,6 @@ const FormDisplay = () => {
           </h3>
         </motion.div>
       ) : (
-        // <Form name="contact" method="POST" data-netlify="true">
-        //   <input type="hidden" name="form-name" value="contact" />
-        //   <Form.Group onChange={(e) => handleFormChange(e)} controlId="name">
-        //     <Form.ControlLabel>Name</Form.ControlLabel>
-        //     <Form.Control name="name" />
-        //     <Form.HelpText>Name is required</Form.HelpText>
-        //   </Form.Group>
-        //   <Form.Group onChange={(e) => handleFormChange(e)} controlId="email">
-        //     <Form.ControlLabel>Email</Form.ControlLabel>
-        //     <Form.Control
-        //       onClick={(e) => {
-        //         console.log(e.target.value);
-        //       }}
-        //       name="email"
-        //       type="email"
-        //     />
-        //     <Form.HelpText tooltip>Email is required</Form.HelpText>
-        //   </Form.Group>
-
-        //   <Form.Group onChange={(e) => handleFormChange(e)} controlId="message">
-        //     <Form.ControlLabel>Message</Form.ControlLabel>
-        //     <Form.Control
-        //       rows={5}
-        //       name="message"
-        //       value={form.message}
-        //       accepter={Textarea}
-        //     />
-        //   </Form.Group>
-        //   <Form.Group>
-        //     <ButtonToolbar>
-        //       <Button
-        //         appearance="primary"
-        //         disabled={!verified}
-        //         onClick={handleSubmit}
-        //       >
-        //         Submit
-        //       </Button>
-        //     </ButtonToolbar>
-        //   </Form.Group>
-        // </Form>
         <form name="contact" method="post" className="form">
           <input type="hidden" name="form-name" value="contact" />
           <p>

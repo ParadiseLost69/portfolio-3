@@ -10,7 +10,7 @@ import MessageBoardImage from "../assets/images/sushiInventorygif.gif";
 
 export default function Work(props) {
   return (
-    <motion.main
+    <motion.section
       className="portfolio-container__work"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -162,6 +162,7 @@ export default function Work(props) {
                   size="lg"
                   className="card__content--repo-button"
                   href="https://github.com/ParadiseLost69/resume-generator"
+                  target="_blank"
                 >
                   <AiFillGithub />
                   Repo
@@ -193,6 +194,7 @@ export default function Work(props) {
                   size="lg"
                   className="card__content--live-button"
                   href="https://sushi-restaurant-inventory-production.up.railway.app/sushi"
+                  target="_blank"
                 >
                   <AiFillEye />
                   Live
@@ -218,6 +220,6 @@ export default function Work(props) {
           </motion.div>
         </Panel>
       </motion.div>
-    </motion.main>
+    </motion.section>
   );
 }
