@@ -41,7 +41,6 @@ function App() {
           {/* Motion for H1 name intro__item */}
           <motion.h1
             className="intro__item name"
-            drag
             animate={{ rotate: 5, y: 25 }}
             transition={{
               duration: 0.4,
