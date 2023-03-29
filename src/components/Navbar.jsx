@@ -21,6 +21,7 @@ export const Navbar = ({
         onSelect={onSelect}
       >
         <Nav.Item
+          style={{ color: "#575757" }}
           eventKey="home"
           onClick={() => {
             window.scrollTo({ top: 0, behavior: "smooth" });
@@ -28,11 +29,24 @@ export const Navbar = ({
         >
           Home
         </Nav.Item>
-        <Nav.Item onClick={() => scrollToRef(workRef)}>Work</Nav.Item>
-        <Nav.Item onClick={() => scrollToRef(aboutRef)} eventKey="about">
+        <Nav.Item
+          style={{ color: "#575757" }}
+          onClick={() => scrollToRef(workRef)}
+        >
+          Work
+        </Nav.Item>
+        <Nav.Item
+          style={{ color: "#575757" }}
+          onClick={() => scrollToRef(aboutRef)}
+          eventKey="about"
+        >
           About
         </Nav.Item>
-        <Nav.Item onClick={() => scrollToRef(contactRef)} eventKey="contact">
+        <Nav.Item
+          style={{ color: "#575757" }}
+          onClick={() => scrollToRef(contactRef)}
+          eventKey="contact"
+        >
           Contact
         </Nav.Item>
       </Nav>

@@ -75,21 +75,27 @@ function App() {
             whileTap={{ scale: 0.9 }}
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
           >
-            <SocialIcon url="https://www.linkedin.com/in/teddy-loukas-1777b81b0/" />
+            <SocialIcon
+              target="_blank"
+              url="https://www.linkedin.com/in/teddy-loukas-1777b81b0/"
+            />
           </motion.div>
           <motion.div
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
           >
-            <SocialIcon url="https://github.com/ParadiseLost69" />
+            <SocialIcon
+              target="_blank"
+              url="https://github.com/ParadiseLost69"
+            />
           </motion.div>
           <motion.div
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
           >
-            <SocialIcon url="https://twitter.com/TeddyConst" />
+            <SocialIcon target="_blank" url="https://twitter.com/TeddyConst" />
           </motion.div>
           .
         </div>

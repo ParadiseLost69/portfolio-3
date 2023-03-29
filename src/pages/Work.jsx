@@ -17,9 +17,7 @@ export default function Work(props) {
       exit={{ opacity: 0 }}
       ref={props.workRef}
     >
-      <motion.h2 drag className="work__title">
-        Work
-      </motion.h2>
+      <motion.h2 className="work__title">Work</motion.h2>
       <motion.div className="work__container">
         <Panel className="card" header="Find The Parasite App" bordered shaded>
           <motion.div className="card__content">
