@@ -35,7 +35,7 @@ export default function About(props) {
           guitar, snowboarding, and coding. If you would like to get in contact
           please send a message to{" "}
           <a href="mailto:tedloukas@outlook.com">tedloukas@outlook.com</a> or
-          head over to the contact page.
+          head over to the contact section below.
         </p>
         <div className="content__skills-group">
           <h3 className="skills-group__title">Skills</h3>
