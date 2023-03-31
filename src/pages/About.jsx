@@ -43,9 +43,7 @@ const ReactSpeaker = (
 );
 const NodeSpeaker = (
   <Popover title="Node.js">
-    <p>
-      An open-source, cross-platform, back-end JavaScript runtime environment
-    </p>
+    <p>A back-end JavaScript runtime environment</p>
   </Popover>
 );
 const ViteSpeaker = (
@@ -72,18 +70,14 @@ const WordpressSpeaker = (
 const NextSpeaker = (
   <Popover title="Next.js">
     <p>
-      A free and open-source React-based web framework that enables
-      functionality such as server-side rendering and generating static websites
-      for React based web applications.
+      A framework that enables functionality such as server-side rendering and
+      generating static websites
     </p>
   </Popover>
 );
 const FramerSpeaker = (
   <Popover title="Framer Motion">
-    <p>
-      A popular open-source animation library for React that makes it easy to
-      create smooth and interactive animations, transitions, and gestures
-    </p>
+    <p>A React animation library</p>
   </Popover>
 );
 const ReduxSpeaker = (
