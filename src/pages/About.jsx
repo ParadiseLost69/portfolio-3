@@ -111,7 +111,7 @@ export default function About(props) {
     <motion.section
       className="portfolio-container__about"
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      whileInView={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       ref={props.aboutRef}
     >
@@ -136,7 +136,7 @@ export default function About(props) {
               <motion.img
                 initial={{ scale: 0 }}
                 transition={{ duration: 1, type: "spring" }}
-                animate={{ scale: 1 }}
+                whileInView={{ scale: 1 }}
                 className="skill__image"
                 src={htmlLogo}
                 alt="HTML5"
@@ -146,7 +146,7 @@ export default function About(props) {
               <motion.img
                 initial={{ scale: 0 }}
                 transition={{ duration: 1, type: "spring", delay: 0.1 }}
-                animate={{ scale: 1 }}
+                whileInView={{ scale: 1 }}
                 className="skill__image"
                 src={cssLogo}
                 alt="CSS3"
@@ -157,7 +157,7 @@ export default function About(props) {
               <motion.img
                 initial={{ scale: 0 }}
                 transition={{ duration: 1, type: "spring", delay: 0.2 }}
-                animate={{ scale: 1 }}
+                whileInView={{ scale: 1 }}
                 className="skill__image"
                 src={jsLogo}
                 alt="Javascript"
@@ -167,7 +167,7 @@ export default function About(props) {
               <motion.img
                 initial={{ scale: 0 }}
                 transition={{ duration: 1, type: "spring", delay: 0.3 }}
-                animate={{ scale: 1 }}
+                whileInView={{ scale: 1 }}
                 className="skill__image"
                 src={reactLogo}
                 alt="React"
@@ -177,7 +177,7 @@ export default function About(props) {
               <motion.img
                 initial={{ scale: 0 }}
                 transition={{ duration: 1, type: "spring", delay: 0.4 }}
-                animate={{ scale: 1 }}
+                whileInView={{ scale: 1 }}
                 className="skill__image"
                 src={nodeLogo}
                 alt="Node.js"
@@ -187,7 +187,7 @@ export default function About(props) {
               <motion.img
                 initial={{ scale: 0 }}
                 transition={{ duration: 1, type: "spring", delay: 0.5 }}
-                animate={{ scale: 1 }}
+                whileInView={{ scale: 1 }}
                 className="skill__image"
                 src={viteLogo}
                 alt="Vite"
@@ -201,7 +201,7 @@ export default function About(props) {
               <motion.img
                 initial={{ scale: 0 }}
                 transition={{ duration: 1, type: "spring", delay: 0.6 }}
-                animate={{ scale: 1 }}
+                whileInView={{ scale: 1 }}
                 className="skill__image"
                 src={expressLogo}
                 alt="Express.js"
@@ -215,7 +215,7 @@ export default function About(props) {
               <motion.img
                 initial={{ scale: 0 }}
                 transition={{ duration: 1, type: "spring", delay: 0.7 }}
-                animate={{ scale: 1 }}
+                whileInView={{ scale: 1 }}
                 className="skill__image"
                 src={wordpressLogo}
                 alt="Wordpress"
@@ -225,7 +225,7 @@ export default function About(props) {
               <motion.img
                 initial={{ scale: 0 }}
                 transition={{ duration: 1, type: "spring", delay: 0.8 }}
-                animate={{ scale: 1 }}
+                whileInView={{ scale: 1 }}
                 className="skill__image"
                 src={framerLogo}
                 alt="Framer Motion"
@@ -235,7 +235,7 @@ export default function About(props) {
               <motion.img
                 initial={{ scale: 0 }}
                 transition={{ duration: 1, type: "spring", delay: 0.9 }}
-                animate={{ scale: 1 }}
+                whileInView={{ scale: 1 }}
                 className="skill__image"
                 src={nextLogo}
                 alt="Next.js"
@@ -245,7 +245,7 @@ export default function About(props) {
               <motion.img
                 initial={{ scale: 0 }}
                 transition={{ duration: 1, type: "spring", delay: 1 }}
-                animate={{ scale: 1 }}
+                whileInView={{ scale: 1 }}
                 className="skill__image"
                 src={reduxLogo}
                 alt="Redux"
@@ -257,9 +257,9 @@ export default function About(props) {
               speaker={WebpackSpeaker}
             >
               <motion.img
-                initial={{ scale: 0 }}
+                initial={{ scale: 0, opacity: 0 }}
                 transition={{ duration: 1, type: "spring", delay: 1.1 }}
-                animate={{ scale: 1 }}
+                whileInView={{ scale: 1, opacity: 1 }}
                 className="skill__image"
                 src={webpackLogo}
                 alt="Webpack"

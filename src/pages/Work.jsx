@@ -11,9 +11,11 @@ import MessageBoardImage from "../assets/images/sushiInventorygif.gif";
 export default function Work(props) {
   return (
     <motion.section
+      style={{ opacity: props.opacity }}
       className="portfolio-container__work"
+      //reveal on scroll
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      animate={{ opacity: props.opacity }}
       exit={{ opacity: 0 }}
       ref={props.workRef}
     >

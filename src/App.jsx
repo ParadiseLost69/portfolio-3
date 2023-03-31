@@ -3,12 +3,19 @@ import "./App.css";
 import { Button, Nav, Container } from "rsuite";
 import { Navbar } from "./components/Navbar";
 import { SocialIcon } from "react-social-icons";
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 import Work from "./pages/Work";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 
 function App() {
+  const { scrollYProgress } = useScroll();
+  const [scrollY, setScrollY] = useState(0);
+
+  window.addEventListener("scroll", () => {
+    setScrollY(scrollYProgress.current);
+  });
+
   //sets navbar highlighting
   const [active, setActive] = React.useState("home");
   //reveal on scroll
@@ -100,7 +107,8 @@ function App() {
           .
         </div>
       </motion.section>
-      <Work workRef={workRef} />
+
+      <Work workRef={workRef} opacity={scrollY > 0.08 ? 1 : 0} />
       <About aboutRef={aboutRef} />
       <Contact contactRef={contactRef} />
     </div>

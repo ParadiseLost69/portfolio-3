@@ -7,7 +7,7 @@ export default function Contact(props) {
   return (
     <motion.section
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      whileInView={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       className="portfolio--container__contact"
       ref={props.contactRef}
