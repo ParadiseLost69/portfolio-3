@@ -43,15 +43,35 @@ const FormDisplay = () => {
           <input type="hidden" name="form-name" value="contact" />
           <p>
             <label htmlFor="name">Name</label> <br />
-            <input type="text" id="name" name="name" required />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="John Smith"
+              required
+            />
           </p>
           <p>
             <label htmlFor="email">Email</label> <br />
-            <input type="email" id="email" name="email" required />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@domain.com"
+              required
+            />
           </p>
           <p>
             <label htmlFor="message">Message</label> <br />
-            <textarea id="message" name="message" required></textarea>
+            <textarea
+              style={{ resize: "none" }}
+              id="message"
+              name="message"
+              placeholder="Your message here..."
+              rows={10}
+              cols={50}
+              required
+            ></textarea>
           </p>
           <p>
             <Button type="submit" appearance="primary">

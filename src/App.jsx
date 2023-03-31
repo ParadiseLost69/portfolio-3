@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./App.css";
 import { Button, Nav, Container } from "rsuite";
 import { Navbar } from "./components/Navbar";
@@ -11,6 +11,7 @@ import Contact from "./pages/Contact";
 function App() {
   //sets navbar highlighting
   const [active, setActive] = React.useState("home");
+  //reveal on scroll
 
   //references to scroll pages into view
   const workRef = useRef(null);
